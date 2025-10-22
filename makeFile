@@ -1,0 +1,15 @@
+#this is the amekfile for lab8
+
+CC = gcc
+CFLAGS = -Wall -Wextra
+
+all: score temp
+
+score: task1.c
+	$(CC) $(CFLAGS) task1.c -o score
+
+temp: task2.c
+	$(CC) $(CFLAGS) task2.c -o temp
+
+clean:
+	rm -f score temp
